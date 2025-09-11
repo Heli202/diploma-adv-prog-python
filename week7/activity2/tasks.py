@@ -15,7 +15,7 @@ def add_task(tasks, task):
     tasks.append((task, False))
 
 def mark_task_completed(tasks, index):
-    # pdb.set_trace()
+    breakpoint()
     if 0 <= index < len(tasks):
         tasks[index] = True 
     else:
@@ -97,3 +97,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

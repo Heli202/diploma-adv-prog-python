@@ -1,0 +1,23 @@
+    1  ls -al
+    2  clear
+    3  ls
+    4  cd Documents/
+    5  clear
+    6  ls
+   11  cd diploma-adv-prog-python/
+   12  clear
+   13  ls -al
+   14  python --version
+   15  .venv/Scripts/activate  // Windows
+   16  source .venv/Scripts/activate / Linux, Mac Git Bash
+   18  python --version
+   32  ls
+   33  python -m tasks
+   34  python tasks.py
+   35  nano tasks.py
+   41  python --version
+   42  cd week7
+   43  ls
+   44  cd activity2/
+   47  history
+   48  history > cli.txt
