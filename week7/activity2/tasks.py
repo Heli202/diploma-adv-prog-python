@@ -12,7 +12,7 @@ import pdb
 
 def add_task(tasks, task):
     # pdb.set_trace()
-    task.append((task, False))
+    tasks.append((task, False))
 
 def mark_task_completed(tasks, index):
     # pdb.set_trace()
@@ -28,17 +28,17 @@ def delete_task(tasks, index):
         print("Invalid task index.")
 
 def list_tasks(tasks):
-    # pdb.set_trace()
+    pdb.set_trace()
     if not tasks:
         print("No tasks available.")
         return
 
     for index, task in enumerate(tasks):
-        print(f"{index}. {'[X]' if task else '[ ]'} {task[0]}") 
+        print(f"{index}. {'[]' if task else '[X]'} {task[0]}") 
 
 def sort_tasks(tasks):
     # pdb.set_trace()
-    tasks.sort(key=lambda task: x[1])
+    tasks.sort()
 
 def binary_search(tasks, target):
     # pdb.set_trace()
@@ -55,7 +55,7 @@ def binary_search(tasks, target):
     return -1
 
 def main():
-    # pdb.set_trace()
+    
     tasks = []
 
     while True:
@@ -73,12 +73,11 @@ def main():
             task = input("Enter task description: ")
             add_task(tasks, task)
         elif choice == "2":
-            pdb.set_trace()
             index = int(input("Enter task index to mark as completed: "))
             mark_task_completed(tasks, index)
         elif choice == "3":
             index = int(input("Enter task index to delete: "))
-            delete_task(tasks)
+            delete_task(tasks, index)
         elif choice == "4":
             list_tasks(tasks)
         elif choice == "5":
