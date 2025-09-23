@@ -15,9 +15,14 @@ def add_task(tasks, task):
     tasks.append((task, False))
 
 def mark_task_completed(tasks, index):
-    breakpoint()
+    #breakpoint()
     if 0 <= index < len(tasks):
-        tasks[index] = True 
+        temp_list = list(tasks[index])
+        if temp_list[1] == True:
+            temp_list[1] = False
+        else:
+            temp_list[1] = True
+        tasks[index] =  tuple(temp_list)
     else:
         print("Invalid task index.")
 
@@ -28,13 +33,13 @@ def delete_task(tasks, index):
         print("Invalid task index.")
 
 def list_tasks(tasks):
-    pdb.set_trace()
+    #pdb.set_trace()
     if not tasks:
         print("No tasks available.")
         return
 
     for index, task in enumerate(tasks):
-        print(f"{index}. {'[]' if task else '[X]'} {task[0]}") 
+        print(f"{index}. {'[X]' if task[1] else '[ ]'} {task[0]}") 
 
 def sort_tasks(tasks):
     # pdb.set_trace()
