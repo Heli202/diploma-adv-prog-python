@@ -1,0 +1,6 @@
+Django>=5.0,<6.0
+<<<<<<< HEAD:week11/notifier_app/requirements.txt
+aiohttp>=3.9,<4.0
+=======
+aiohttp>=3.9,<4.0
+>>>>>>> b30f28154bce28dd6ce11676eb05caacfb848c64:week11/notifier-app/requirements.txt
