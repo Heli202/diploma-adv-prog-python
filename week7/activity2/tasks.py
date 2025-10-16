@@ -43,14 +43,14 @@ def list_tasks(tasks):
 
 def sort_tasks(tasks):
     # pdb.set_trace()
-    tasks.sort()
+    tasks.sort(key=lambda task: task[0])
 
 def binary_search(tasks, target):
     # pdb.set_trace()
     sort_tasks(tasks)
     low, high = 0, len(tasks) - 1
     while low <= high:
-        mid = (low + high)
+        mid = (low + high) // 2
         if tasks[mid][0] == target:
             return mid
         elif tasks[mid][0] < target:

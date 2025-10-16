@@ -144,7 +144,7 @@ class GuessTheAnimal:
                     if correct:
                         self.__update_current_node(self.__current_node, animal, None, True)
                 else:
-                    pass
+                    
 
 
             has_guessed = True
