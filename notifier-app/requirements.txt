@@ -1,6 +1,10 @@
 Django>=5.0,<6.0
 <<<<<<< HEAD:week11/notifier_app/requirements.txt
 aiohttp>=3.9,<4.0
+<<<<<<< HEAD:week11/notifier-app/requirements.txt
 =======
 aiohttp>=3.9,<4.0
 >>>>>>> b30f28154bce28dd6ce11676eb05caacfb848c64:week11/notifier-app/requirements.txt
+=======
+pandas
+>>>>>>> 3b18c0bd510d65ed8f2572cfa158c3947de7604c:notifier-app/requirements.txt
